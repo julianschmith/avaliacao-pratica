@@ -1,0 +1,273 @@
+/* ============================================
+   Mundo Roblox — aparência da página
+   ============================================ */
+
+/* Corpo da página: fonte, cor de fundo e espaçamento */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f4f5f7;
+}
+
+/* Link de pular: fica escondido até receber Tab */
+.pular {
+  position: absolute;
+  left: -9999px;
+}
+
+.pular:focus {
+  left: 10px;
+  top: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Cabeçalho azul com o título do site */
+.topo {
+  background-color: #1b3a6b;
+  color: white;
+  padding: 28px 20px 16px 20px;
+  text-align: center;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitulo {
+  margin: 6px 0 20px 0;
+  font-size: 1rem;
+}
+
+/* Menu: os links ficam lado a lado com flex */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: #2f5fa8;
+  text-decoration: underline;
+}
+
+/* Área do conteúdo, com largura máxima e centralizada */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 20px 40px 20px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: #1b3a6b;
+  font-size: 1.4rem;
+  margin-top: 0;
+  border-bottom: 2px solid #e2e6ec;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #1b3a6b;
+  font-size: 1.1rem;
+}
+
+/* Imagens nunca passam da largura da tela */
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* Listas */
+ul, ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+dt {
+  font-weight: bold;
+  color: #1b3a6b;
+  margin-top: 12px;
+}
+
+dd {
+  margin: 2px 0 0 0;
+}
+
+/* Formulário */
+fieldset {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1b3a6b;
+  padding: 0 6px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 320px;
+  padding: 9px 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #b8bfc9;
+  border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #2f5fa8;
+}
+
+.ajuda {
+  display: block;
+  font-size: 0.82rem;
+  color: #666666;
+  margin-top: 4px;
+}
+
+/* Botões */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.enviar {
+  background-color: #1b3a6b;
+  color: white;
+}
+
+.limpar {
+  background-color: #e4e6ea;
+  color: #333333;
+}
+
+/* Caixa da mensagem começa escondida */
+.mensagem {
+  display: none;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.mensagem.erro {
+  display: block;
+  background-color: #fdecea;
+  color: #b3261e;
+  border: 1px solid #f2b8b5;
+}
+
+.mensagem.sucesso {
+  display: block;
+  background-color: #e8f5ec;
+  color: #1e6b3a;
+  border: 1px solid #a8d5b5;
+}
+
+/* Caixa do resultado */
+.resultado {
+  margin-top: 20px;
+  padding: 18px 20px;
+  background-color: #eef3fb;
+  border: 1px solid #c3d4ec;
+  border-radius: 8px;
+}
+
+.resultado ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.resultado li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #c3d4ec;
+}
+
+.destaque {
+  font-weight: bold;
+  color: #1b3a6b;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1b3a6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+/* Celular, menu em coluna e fonte menor */
+@media (max-width: 700px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .topo h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 16px 12px 32px 12px;
+  }
+
+  input,
+  select {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+}
