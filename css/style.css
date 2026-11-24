@@ -1,8 +1,4 @@
-/* ============================================
-   Mundo Roblox — aparência da página
-   ============================================ */
-
-/* Corpo da página: fonte, cor de fundo e espaçamento */
+/* Corpo da página, contendo fonte, cor de fundo e espaçamento */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
