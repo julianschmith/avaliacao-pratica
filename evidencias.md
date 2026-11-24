@@ -8,7 +8,7 @@
 
 ---
 
-## E1 — Repositório
+## E1 -- Repositório
 
 • Endereço do repositório público:
 
@@ -16,32 +16,32 @@ https://github.com/julianschmith/avaliacao-pratica
 
 ---
 
-## E2 — Página no computador
+## E2 -- Página no computador
 
-[Página inicial em tela de computador](img/e2-computador.png)
+![Página inicial em tela de computador](img/e2-computador.png)
 
-Figura 1: Página inicial exibida no navegador em tela de computador.
+Figura 1: Página inicial exibida no navegador em tela do computador
 
 ---
 
-## E3 — Página em largura de celular
+## E3 -- Página em largura de celular
 
 ![Página inicial em largura de celular](img/e3-celular.png)
 
-Figura 2: A mesma página em largura de 390 px, com o menu reorganizado em coluna.
+Figura 2: A mesma página em tela de celular, com o menu reorganizado em coluna
 
 ---
 
-## E4 — Formulário recusando envio inválido
+## E4 -- Formulário recusando envio inválido
 
 ![Formulário com mensagem de erro](img/e4-erro.png)
 
-Figura 3: Envio com o campo de nome vazio, recusado com mensagem de orientação ao usuário.
+Figura 3: Envio com o campo de nome vazio, recusado com mensagem de orientação ao usuário
 
 ---
 
-## E4 — Formulário aceitando envio válido
+## E4 -- Formulário aceitando envio válido
 
 ![Formulário com resultado calculado](img/e4-sucesso.png)
 
-Figura 4: Envio com dados corretos, exibindo o total calculado de R$ 270,00.
+Figura 4: Envio com dados corretos, exibindo o total calculado de R$ 3417,00
