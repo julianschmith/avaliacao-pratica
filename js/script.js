@@ -37,8 +37,8 @@ formulario.addEventListener("submit", function (evento) {
       throw new Error("Informe seu nome ou apelido.");
     }
 
-    if (email === "" || !email.includes("@")) {
-      throw new Error("Informe um e-mail válido, com @");
+    if (email === "" || !email.includes("@") || !email.includes(".")) {
+      throw new Error("Informe um e-mail válido, com @ e .");
     }
 
     if (campoQuantidade.value === "") {
