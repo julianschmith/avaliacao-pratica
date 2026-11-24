@@ -4,8 +4,11 @@ Página sobre o Roblox, com uma calculadora que mostra quanto custa comprar Robu
 
 ## Identificação
 • Estudante: Julian Gabriel
+
 • Turma: DS 2025/1 M3
+
 • Unidade Curricular: Programação de Aplicativos
+
 
 ## Descrição
 Apresenta o jogo, dá dicas para iniciantes, tem um glossário com cinco termos
