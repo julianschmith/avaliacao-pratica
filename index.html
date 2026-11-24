@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia do Roblox com dicas de jogos, glossário e uma calculadora de Robux para saber quanto custa em reais.">
+  <title>Mundo do Roblox — Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <h1>Mundo do Roblox</h1>
+    <p class="subtitulo">Um guia simples para quem está começando no jogo</p>
+
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre o jogo</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#glossario">Glossário</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <section id="sobre">
+      <h2>O que é o Roblox?</h2>
+      <p>O Roblox é uma plataforma onde as pessoas criam e jogam jogos feitos por outras
+      pessoas. Ele não é um jogo só, é um lugar com milhões de experiências diferentes,
+      e cada uma tem suas próprias regras.</p>
+      <p>Eu jogo Roblox desde 2018 e o que mais gosto é que dá para criar o próprio jogo
+      usando o Roblox Studio. É de graça, e muitas pessoas começam a aprender programação por ali.</p>
+      <figure>
+        <img src="img/roblox-studio.png"
+             alt="Tela do Roblox Studio com blocos coloridos e a barra de ferramentas aberta"
+             width="600" height="340">
+        <figcaption>O Roblox Studio, onde os jogos da plataforma são criados.</figcaption>
+      </figure>
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas para quem está começando</h2>
+      <p>Essas são as coisas que eu queria saber quando eu comecei:</p>
+      <ul>
+        <li>Comece pelos jogos com mais jogadores e visitas, pois costumam ser os mais fáceis de entender:
+          <ul>
+            <li>Obbys: fases de obstáculo</li>
+            <li>Tower Defense: defender a base</li>
+            <li>Simulators: simuladores de acumular pontos e evoluir</li>
+          </ul>
+        </li>
+        <li>Nunca compartilhe sua senha com ninguém, nem com quem diz ser da equipe do Roblox</li>
+        <li>Desconfie de qualquer site que prometa Robux de graça, já que isso não é possível</li>
+        <li>Ative a verificação em duas etapas na sua conta para protegê-la</li>
+      </ul>
+    </section>
+
+    <section id="jogos-indicados">
+      <h2>Jogos que indico</h2>
+      <p>Esses são os jogos que eu recomendo para iniciantes</p>
+      <ul>
+         <li>Obbys: fases de obstáculo</li>
+         <li>Tower Defense: defender a base</li>
+         <li>Simulators: simuladores de acumular pontos e evoluir</li>
+         <li>Arsenal: jogo de tiro estilo Arms Race</li>
+        </li>
+      </ul>
+    </section>
+
+    <section id="glossario">
+      <h2>Glossário</h2>
+      <dl>
+        <dt>Robux:</dt>
+        <dd>Moeda do Roblox, usada para comprar itens e acessórios dentro dos jogos.</dd>
+
+        <dt>Obby:</dt>
+        <dd>Jogo de obstáculos, em que o objetivo é chegar ao final sem cair.</dd>
+
+        <dt>Avatar:</dt>
+        <dd>O personagem que representa você dentro da plataforma.</dd>
+
+        <dt>Studio:</dt>
+        <dd>Programa gratuito da Roblox usado para criar jogos.</dd>
+
+        <dt>Game Pass</dt>
+        <dd>Item vendido dentro de um jogo que libera uma vantagem ou área extra.</dd>
+      </dl>
+    </section>
+
+    <section id="calculadora">
+      <h2>Calculadora de Robux</h2>
+      <p>Quer saber quanto custa comprar Robux? Preencha os campos abaixo.
+      O valor é calculado na hora, com desconto para compras maiores.</p>
+
+      <form id="formulario" novalidate>
+
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <p>
+            <label for="nome">Seu nome ou apelido</label>
+            <input type="text" id="nome" name="nome" autocomplete="nickname" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Compra de Robux</legend>
+
+          <p>
+            <label for="quantidade">Quantos Robux você quer comprar</label>
+            <input type="number" id="quantidade" name="quantidade"
+                   min="100" max="100000" step="100" required>
+            <span class="ajuda">De 100 a 100.000, em passos de 100.</span>
+          </p>
+
+          <p>
+            <label for="preco">Preço que você paga por 100 Robux (R$)</label>
+            <input type="number" id="preco" name="preco"
+                   min="1" max="50" step="0.01" required>
+            <span class="ajuda">O pacote oficial de 100 Robux custa cerca de R$ 6,00.</span>
+          </p>
+
+          <p>
+            <label for="tipo">Tipo de conta</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Escolha uma opção</option>
+              <option value="comum">Conta comum</option>
+              <option value="premium">Conta Premium</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Calcular</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
+
+      <p id="mensagem" class="mensagem" role="status"></p>
+
+      <div id="resultado" class="resultado" hidden>
+        <h3>Resultado da sua compra</h3>
+        <ul id="lista-resultado"></ul>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <p>Todos os direitos reservados para Julian Gabriel.</p>
+  </footer>
+
+</body>
+</html>
