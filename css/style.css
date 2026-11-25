@@ -32,6 +32,13 @@ body {
   color: white;
 }
 
+.pular {
+  margin-left: 10px;
+  transform: translateY(50%);
+  position: absolute;
+  color: #ffffff;
+}
+
 /* Conteúdo */
 main {
   max-width: 800px;
@@ -127,8 +134,14 @@ button {
 .rodape {
   background-color: #1b3a6b;
   color: white;
-  text-align: center;
-  padding: 15px;
+  text-align: left;
+}
+
+/* Texto rodapé */
+.rodape p {
+  margin: 0px 8px;
+  font-size: 14px;
+  padding: 3px;
 }
 
 /* Celular */
