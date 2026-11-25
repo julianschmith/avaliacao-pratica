@@ -15,14 +15,14 @@ https://github.com/julianschmith/avaliacao-pratica
 ---
 
 ## E2 -- Página no computador
-![Página inicial em tela de computador]()
+![Página inicial em tela de computador](img/e2-computador.png)
 
 Figura 1: Página inicial exibida no navegador em tela do computador
 
 ---
 
 ## E3 -- Página em largura de celular
-![Página inicial em largura de celular]()
+![Página inicial em largura de celular](img/e3-celular.png)
 
 Figura 2: A mesma página na tela do celular
 
