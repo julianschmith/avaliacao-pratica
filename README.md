@@ -18,13 +18,13 @@ e uma calculadora de Robux, onde o visitante informa a quantidade e o preço, e 
 Baixe a pasta completa e abra o arquivo index.html no navegador.
 
 ## Estrutura do site
-• index.html — página principal
+• index.html -- página principal
 
-• css/style.css — aparência
+• css/style.css -- aparência
 
-• js/script.js — funcionamento
+• js/script.js -- funcionamento
 
-• img/ — imagens
+• img/ -- imagens
 
 
 ## Regras de validação
