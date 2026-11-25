@@ -33,10 +33,9 @@ body {
 }
 
 .pular {
-  margin-left: 10px;
-  transform: translateY(50%);
   position: absolute;
-  color: #ffffff;
+  left: -9999px;
+  right: -9999px;
 }
 
 /* Conteúdo */
@@ -158,11 +157,6 @@ button {
   button {
     width: 100%;
     margin-bottom: 5px;
-  }
-
-  .pular {
-    position: absolute;
-    display: none;
   }
 
 }
