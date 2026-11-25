@@ -11,9 +11,8 @@ Página sobre o Roblox, com uma calculadora que mostra quanto custa comprar Robu
 
 
 ## Descrição
-Apresenta o jogo, dá dicas para iniciantes, tem um glossário com cinco termos
-e uma calculadora de Robux. O visitante informa a quantidade e o preço, e a
-página devolve o valor total com desconto por volume.
+Esse repositório tem o intuito de apresentar o jogo, dar dicas para iniciantes, possui um glossário com cinco termos
+e uma calculadora de Robux, onde o visitante informa a quantidade e o preço, e a página devolve o valor total com desconto por volume.
 
 ## Como executar
 Baixe a pasta completa e abra o arquivo index.html no navegador.
