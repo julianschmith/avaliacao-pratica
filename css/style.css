@@ -1,10 +1,19 @@
 /* Mundo Roblox */
 
+* {
+  box-sizing: border-box; /* Evita que paddings estourem a largura no celular */
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f5f7;
   color: #333;
+  
+  /* Faz o corpo ocupar no mínimo 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Cabeçalho */
@@ -34,15 +43,16 @@ body {
 
 .pular {
   position: absolute;
-  left: -9999px;
-  right: -9999px;
+  left: -9999px; /* Removido o 'right: -9999px' que causava bug de largura */
 }
 
 /* Conteúdo */
 main {
   max-width: 800px;
+  width: 100%; /* Garante alinhamento perfeito no Flexbox */
   margin: 0 auto;
   padding: 20px;
+  flex: 1; /* Faz o conteúdo crescer e empurrar o rodapé para baixo */
 }
 
 section {
@@ -57,9 +67,21 @@ h2 {
   color: #1b3a6b;
 }
 
-/* Imagem */
+/* Imagem (já alinhada para PC e celular) */
+figure {
+  margin: 20px 0;
+  width: 100%;
+}
+
 figure img {
   max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 7px;
 }
 
 /* Formulário */
@@ -134,6 +156,8 @@ button {
   background-color: #1b3a6b;
   color: white;
   text-align: left;
+  padding: 10px 0; /* Deixa o rodapé mais bem acabado */
+  margin-top: auto; /* Cola o rodapé no final da tela */
 }
 
 /* Texto rodapé */
@@ -158,5 +182,4 @@ button {
     width: 100%;
     margin-bottom: 5px;
   }
-
 }
